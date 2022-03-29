@@ -1,0 +1,39 @@
+# Python code to demonstrate matrix operations
+# multiply() and dot()
+  
+# importing numpy for matrix operations
+import numpy
+  
+# initializing matrices
+x = numpy.array([[1, 2], [4, 5]])
+y = numpy.array([[7, 8], [9, 10]])
+  
+# using multiply() to multiply matrices element wise
+print ("The element wise multiplication of matrix is : ")
+print (numpy.multiply(x,y))
+  
+# using dot() to multiply matrices
+print ("The product of matrices is : ")
+print (numpy.dot(x,y))
+
+# using "T" to transpose the matrix
+print("Given matrix:")
+print(x)
+print ("The transpose of given matrix is : ")
+print (x.T)
+
+# using "trace" to find trace of the matrix
+print ("The trace of given matrix is : ")
+print (x.trace())
+
+#Rank of matrix
+print(numpy.linalg.matrix_rank(x))
+
+#Determinant of matrix
+print(numpy.linalg.det(x))
+
+#Inverse of matrix
+print(numpy.linalg.inv(x))
+
+#Eigen values of matrix
+print(numpy.linalg.eig(x))
